@@ -24,6 +24,14 @@ import re
 ## Write code to define your parse_counted_words function here.
 def parse_counted_words(string):
     list_of_tups = []
+    #x will equal the number in the string
+    #y will equal the word
+    #then we will try to separate them into a tuple and stick it in the list. 
+    for word in string:
+        x = re.findall(\b\d*\s\S*)
+        if word == x:
+            list_of_tups.append(x)
+
     return
 
 
