@@ -11,15 +11,20 @@ import re
 
 ## PART 1: 300 points
 
-## Use regular expressions to define a function called parse_counted_words which should accept a string, find strings of the form: <count> <word>  e.g. 101 Dalmations, inside it, and should return either the LAST correctly matching number-word combo in the string as a tuple, e.g. ('13', "pineapples"), if there are any such sub-strings, or None, if there are not.
-## The number in the <count> should be one or more digits only. The word should be made up of an optional non-alphabetic character followed by any number of alphabetic characters, upper or lower case.
+## Use regular expressions to define a function called parse_counted_words which should accept a string, find strings of the form: 
+## <count> <word>  e.g. 101 Dalmations, inside it, and should return either the LAST correctly matching number-word combo 
+## in the string as a tuple, e.g. ('13', "pineapples"), if there are any such sub-strings, or None, if there are not.
+## The number in the <count> should be one or more digits only. The word should be made up of an optional non-alphabetic 
+## character followed by any number of alphabetic characters, upper or lower case.
 ## HINT:  \b matches the beginning or end of a word
 ## HINT:  you can use the Python re .findall method to get multiple matches in a string
 #parse_counted_words('5 watermelons, 13 pineapples, and 1 papaya.') should return ('1', 'papaya')
 # parse_counted_words('101 dalmations!') should return ('101', 'dalmations') ...
 
 ## Write code to define your parse_counted_words function here.
-
+def parse_counted_words(string):
+    list_of_tups = []
+    return
 
 
 
