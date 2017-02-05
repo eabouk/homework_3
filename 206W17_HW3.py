@@ -24,22 +24,15 @@ import re
 ## Write code to define your parse_counted_words function here.
 def parse_counted_words(string):
     list_of_tups = []
-    x = re.findall(r'\b\d*\s[a-z]*\b', string)
-    #list_of_tups = list_of_tups.append(x)
-    #print (list_of_tups)
-    print ("PRINTING X", x)
+    x = re.findall(r'\b([0-9]+)\s(.[\A-Za-z]+[^.\s\!])', string)
+    
+
+    if x == []:
+        return None
     
     newstring = x[-1]
-    print ("PRINTING NEW STRING", newstring)
-    #get number separated from word
-    number = re.findall(r'\b\d', newstring)
-    number = number[0]
-    print ("PRINTING NUMBER", number)
-    word = re.findall(r'[a-z]*\b', newstring)
-    print ("PRINTING WORD", word)
-    tup = (number, word)
-    print ("PRINTING TUP", tup)
-    return tup
+    
+    return newstring
 
 
 
